@@ -29,7 +29,7 @@ public class Student {
 
     @Override
     public String toString() {
-         return String.format("%8d %8s %8s %8s", numarMaricol,nume,prenume,grupa);
+         return String.format("%8d %8s %8s %s", numarMaricol,nume,prenume,grupa);
 
     }
 
