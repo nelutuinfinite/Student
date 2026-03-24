@@ -1,5 +1,5 @@
 package ro.ulbs.proiectaresoftware.student.lab2;
-import ro.ulbs.proiectaresoftware.student.Student;
+import ro.ulbs.proiectaresoftware.student.student.Student;
 
 import java.util.*;
 
@@ -53,7 +53,7 @@ public class Aplication {
         xPlusYLimitedByP.addAll(xPlusy);
         xPlusYLimitedByP.stream().forEach(e->{System.out.print(e+" ");});
         System.out.println();
-        xPlusYLimitedByP.removeIf(g->g>5);
+        xPlusYLimitedByP.removeIf(g->g>5    );
         xPlusYLimitedByP.stream().forEach(e->{System.out.print(e+" ");});
     }
 }

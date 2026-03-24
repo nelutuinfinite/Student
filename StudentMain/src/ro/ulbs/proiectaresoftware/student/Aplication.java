@@ -1,4 +1,4 @@
-package ro.ulbs.proiectaresoftware.student;
+import ro.ulbs.proiectaresoftware.student.student.Student;
 
 public class Aplication {
     static void main(){

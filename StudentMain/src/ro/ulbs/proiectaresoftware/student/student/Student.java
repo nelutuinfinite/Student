@@ -1,4 +1,4 @@
-package ro.ulbs.proiectaresoftware.student;
+package ro.ulbs.proiectaresoftware.student.student;
 
 public class Student {
     private int numarMaricol;
