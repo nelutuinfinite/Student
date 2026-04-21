@@ -1,4 +1,9 @@
+package ro.ulbs.proiectaresoftware.student;
+
 import ro.ulbs.proiectaresoftware.student.student.Student;
+import ro.ulbs.proiectaresoftware.student.student.StudentiBursieri;
+
+import java.util.Map;
 
 public class Aplication {
     static void main(){
@@ -10,6 +15,12 @@ public class Aplication {
         System.out.println(s2);
         System.out.println(s3);
         System.out.println(s4);
+        Map<Student, StudentiBursieri> bursieri = Map.of(
+                new Student(1025,"Andrei","Popa","ISM141/2"),
+                new StudentiBursieri(1025,"Andrei","Popa","ISM141/2", 725.50),
+                new Student(1024,"Ioan","Mihalcea","ISM141/1"),
+                new StudentiBursieri(1024,"Ioan","Mihalcea","ISM141/1",801.10));
+
 
     }
 
