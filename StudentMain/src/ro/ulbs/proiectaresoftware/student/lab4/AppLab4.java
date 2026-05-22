@@ -4,7 +4,7 @@ import java.util.*;
 
 public class AppLab4 {
     public static void main(){
-        HashMap<String, Tanar> tineri= new HashMap<>();
+            HashMap<String, Tanar> tineri= new HashMap<>();
         HashMap<String,Integer> varste=  new HashMap<>();
         varste.put("Ioan", 21);
         varste.put("Maria", 22);

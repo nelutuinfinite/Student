@@ -1,0 +1,19 @@
+package ro.ulbs.proiectaresoftware.student.lab11;
+
+public class MediaInterested implements Observer{
+    private String name;
+
+    public void UpDate(String mesaj){
+        doSomeLogic(mesaj);
+    }
+
+    public MediaInterested(String name) {
+        this.name = name;
+    }
+
+    public void doSomeLogic(String message) {
+        System.out.println("["+name + "] received update: " + message);
+    }
+
+
+}

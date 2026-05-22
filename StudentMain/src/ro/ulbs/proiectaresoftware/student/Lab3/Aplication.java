@@ -24,8 +24,7 @@ public class Aplication {
         File fis = new File("C:\\Users\\nelut\\IdeaProjects\\Student\\StudentMain\\src\\ro\\ulbs\\proiectaresoftware\\student\\Lab3\\in.txt");
 
         try(Scanner sc= new Scanner(fis);
-
-        BufferedWriter text= Files.newBufferedWriter(path);) {
+            BufferedWriter text= Files.newBufferedWriter(path);) {
             while(sc.hasNextLine()){
                 cu = sc.nextLine();
                 cuvinte = cu.split("\\.");
@@ -35,24 +34,49 @@ public class Aplication {
                     cuvinte[i]+="\n";
                     System.out.print((cuvinte[i]));
                 }
-                    text.write("b\n");
-                    for(String line: cuvinte){
-                        text.write(line);
-                    }
+            }
+        }
+        catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        try(Scanner sc= new Scanner(fis);
+        BufferedWriter text= Files.newBufferedWriter(path);) {
+            while(sc.hasNextLine()){
+                cu = sc.nextLine();
+                cuvinte = cu.split("\\.");
+                toate = cu.split("\n");
+                toate[toate.length-1]+="\n\n";
+
 
                     text.write("a\n");
                     for(String line : toate){
                         text.write(line);
                     }
                 }
-
-
-
-
             }
             catch (IOException e) {
             throw new RuntimeException(e);
             }
+        try(Scanner sc= new Scanner(fis);
+
+            BufferedWriter text= Files.newBufferedWriter(path);) {
+            while(sc.hasNextLine()){
+                cu = sc.nextLine();
+                cuvinte = cu.split("\\.");
+                toate = cu.split(" ");
+                toate[toate.length-1]+="\n\n";
+
+                text.write("b\n");
+                for(String line: cuvinte){
+                    text.write(line);
+                }
+
+
+            }
+        }
+        catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
 

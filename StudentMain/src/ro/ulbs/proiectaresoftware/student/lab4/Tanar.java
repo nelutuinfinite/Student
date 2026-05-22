@@ -17,4 +17,9 @@ public class Tanar {
     public void Afis(){
         System.out.println(name+" "+age+" "+address);
     }
+
+    @Override
+    public String toString() {
+        return name +" "+ age+" "+ address;
+    }
 }
